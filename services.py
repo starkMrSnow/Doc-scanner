@@ -9,11 +9,11 @@ from google import genai
 # init whisperer client (use env vars for production)
 client = LLMWhispererClientV2(
     base_url="https://llmwhisperer-api.us-central.unstract.com/api/v2",
-    api_key=os.getenv("LLMWHISPERER_API_KEY", "RnkEXMIG6sjFDv-5suZKdPHQzMozYH-IpINhYpv773M")
+    api_key=os.getenv("LLMWHISPERER_API_KEY")
 )
 
 client_genai = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY", "AIzaSyDI02MGCVXW3d1iLPwuw_S_2B4BBoTBOow")
+    api_key=os.getenv("GEMINI_API_KEY")
 )
 
 
